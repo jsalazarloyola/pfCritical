@@ -1,0 +1,842 @@
+{
+	"bludgeoning": [
+    {
+        "_Critical__name": "2 for 1",
+        "_Critical__effect": "Double damage to target and normal damage to adjacent target"
+    },
+    {
+        "_Critical__name": "And Stay Down!",
+        "_Critical__effect": "Normal damage and target is knocked prone and stunned for 1 round (Fort negates stun)"
+    },
+    {
+        "_Critical__name": "Armor Dent",
+        "_Critical__effect": "Double damage and 2d6 damage to metal armor (ignore hardness)"
+    },
+    {
+        "_Critical__name": "Back Breaker",
+        "_Critical__effect": "Double damage and 1d6 Dex damage"
+    },
+    {
+        "_Critical__name": "Bell Ringer",
+        "_Critical__effect": "Normal damage and 1d2 Int damage and sickened for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Bone Masher",
+        "_Critical__effect": "Normal damage and either 1d3 Dex damage and halve speed (leg) or 1d3 Str damage (arm). Limb useless until healed"
+    },
+    {
+        "_Critical__name": "Box the Ears",
+        "_Critical__effect": "Normal damage and target deafened for 1d4 hours"
+    },
+    {
+        "_Critical__name": "Brained",
+        "_Critical__effect": "Double damage and target can take only one move or standard action next round"
+    },
+    {
+        "_Critical__name": "Breathless",
+        "_Critical__effect": "Normal damage and target is exhausted for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Broken Leg",
+        "_Critical__effect": "Normal damage and 1d4 Con and Dex damage. Target's speeds are reduced by half until healed"
+    },
+    {
+        "_Critical__name": "Broken Ribs",
+        "_Critical__effect": "Double damage and target cannot heal naturally for 1d4 days"
+    },
+    {
+        "_Critical__name": "Broken nose",
+        "_Critical__effect": "Normal damage and 1 Cha damage and 1 bleed"
+    },
+    {
+        "_Critical__name": "Collapsed Lung",
+        "_Critical__effect": "Normal damage and target is staggered for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Concussion",
+        "_Critical__effect": "Normal damage and 1d2 Int and Wis damage"
+    },
+    {
+        "_Critical__name": "Cracked Knee",
+        "_Critical__effect": "Normal damage and 1d2 Dex damage. Target's base land speed reduced to 10 feet until healed"
+    },
+    {
+        "_Critical__name": "Cracked Rib",
+        "_Critical__effect": "Normal damage and 1d3 Con damage and target is fatigued"
+    },
+    {
+        "_Critical__name": "Crumpling Blow",
+        "_Critical__effect": "Double damage and target is knocked prone"
+    },
+    {
+        "_Critical__name": "Crunch",
+        "_Critical__effect": "Double damage and target is nauseated for 1 round (Fort negates)"
+    },
+    {
+        "_Critical__name": "Crushed Intestines",
+        "_Critical__effect": "Normal damage and 1d4 Con bleed (DC 15 Fort negates, save each round)"
+    },
+    {
+        "_Critical__name": "Crushed Toe",
+        "_Critical__effect": "Normal damage and 1d4 Dex damage. Target's land speed is halved until healed"
+    },
+    {
+        "_Critical__name": "Crushed Trachea",
+        "_Critical__effect": "Normal damage and target cannot breathe or speak DC 20 Heal check ends condition"
+    },
+    {
+        "_Critical__name": "Earth Rumble",
+        "_Critical__effect": "Normal damage and a free trip attempt versus target and all adjacent enemies"
+    },
+    {
+        "_Critical__name": "Feeble Parry",
+        "_Critical__effect": "Double damage and target is disarmed (1 item)"
+    },
+    {
+        "_Critical__name": "Flat Foot",
+        "_Critical__effect": "Double damage and 1 Dex damage and target's speeds are reduced by 5 feet until healed"
+    },
+    {
+        "_Critical__name": "I See Stars",
+        "_Critical__effect": "Normal damage and target takes a 20% miss chance for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Knockback",
+        "_Critical__effect": "Double damage and target is pushed 1d6 squares directly away"
+    },
+    {
+        "_Critical__name": "Lights Out",
+        "_Critical__effect": "Normal damage and target is blinded for 1d3 rounds"
+    },
+    {
+        "_Critical__name": "Low Blow",
+        "_Critical__effect": "Normal damage and target is sickened for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Mace to da Face",
+        "_Critical__effect": "Normal damage and target dazed and blinded for 1 round"
+    },
+    {
+        "_Critical__name": "Momentum",
+        "_Critical__effect": "Double damage and +2 on all your attack rolls for 1 round"
+    },
+    {
+        "_Critical__name": "My Teef!",
+        "_Critical__effect": "Normal damage and 1 Con damage. Target loses bite, gains 20% spell failure chance for verbal spells"
+    },
+    {
+        "_Critical__name": "Nighty Night",
+        "_Critical__effect": "Normal damage and target is unconscious for 1d4 rounds (Fort negates)"
+    },
+    {
+        "_Critical__name": "Numbing Blow",
+        "_Critical__effect": "Normal damage and 1d4 Dex damage and target is disarmed (1 item, Ref negates drop)"
+    },
+    {
+        "_Critical__name": "Off Balance",
+        "_Critical__effect": "Normal damage and target provokes attacks of opportunity from all threatening opponents"
+    },
+    {
+        "_Critical__name": "Pimp Slap",
+        "_Critical__effect": "Normal damage and target dazed for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Rattled",
+        "_Critical__effect": "Normal damage and target is confused for 1d3 rounds (Fort negates)"
+    },
+    {
+        "_Critical__name": "Roundhouse",
+        "_Critical__effect": "Normal damage and a free attack against adjacent foes at the same bonus"
+    },
+    {
+        "_Critical__name": "Ruptured Spleen",
+        "_Critical__effect": "Normal damage and 1d6 bleed. This bleed can only be cured with magic"
+    },
+    {
+        "_Critical__name": "Shattered Hand",
+        "_Critical__effect": "Normal damage and 1d2 Con and Str damage. Hand useless until healed"
+    },
+    {
+        "_Critical__name": "Shield Smack",
+        "_Critical__effect": "Double damage and target's shield is disarmed"
+    },
+    {
+        "_Critical__name": "Skull Crush",
+        "_Critical__effect": "Double damage and 2d6 Int drain (Fort half)"
+    },
+    {
+        "_Critical__name": "Solid Blow",
+        "_Critical__effect": "Triple damage"
+    },
+    {
+        "_Critical__name": "Split Open",
+        "_Critical__effect": "Double damage and 1d4 bleed"
+    },
+    {
+        "_Critical__name": "Spun Around",
+        "_Critical__effect": "Normal damage and target is flat-footed for 1 round"
+    },
+    {
+        "_Critical__name": "Staggering Blow",
+        "_Critical__effect": "Normal damage and double nonlethal damage"
+    },
+    {
+        "_Critical__name": "Surprise Opening",
+        "_Critical__effect": "Double damage and one free attack against the target with a -5 penalty"
+    },
+    {
+        "_Critical__name": "Terrible Bruise",
+        "_Critical__effect": "Double damage and 2d6 nonlethal damage"
+    },
+    {
+        "_Critical__name": "Thunder Strike",
+        "_Critical__effect": "Double damage and target is deafened for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Tiring Blow",
+        "_Critical__effect": "Double damage plus target is fatigued"
+    },
+    {
+        "_Critical__name": "To Your Thinky Bits",
+        "_Critical__effect": "Double damage and 1 Int bleed (Fort negates save each round)"
+    },
+    {
+        "_Critical__name": "What's Going On?",
+        "_Critical__effect": "Double damage and 1d4 hours of target's memory erased"
+    },
+    {
+        "_Critical__name": "Where Am I?",
+        "_Critical__effect": "Normal damage and target is stunned for 1 round"
+    }
+],
+	"piercing": [
+    {
+        "_Critical__name": "Achilles Heel",
+        "_Critical__effect": "Normal damage and 1d2 Dex damage. Target's speeds are reduced by half until healed"
+    },
+    {
+        "_Critical__name": "Appendicitis",
+        "_Critical__effect": "Double damage and target is poisoned (treat as greenblood oil)"
+    },
+    {
+        "_Critical__name": "Bicep Wound",
+        "_Critical__effect": "Normal damage and 1d4 Str damage"
+    },
+    {
+        "_Critical__name": "Bleeder",
+        "_Critical__effect": "Double damage and 1d6 Bleed"
+    },
+    {
+        "_Critical__name": "Blown Back",
+        "_Critical__effect": "Double damage and target is knocked prone"
+    },
+    {
+        "_Critical__name": "Calf Hole",
+        "_Critical__effect": "Normal damage and 1d4 Dex damage"
+    },
+    {
+        "_Critical__name": "Cheek Pierced",
+        "_Critical__effect": "Normal damage and 1d4 bleed. Target gains 50% spell failure chance for verbal spells until healed"
+    },
+    {
+        "_Critical__name": "Chipped Bone",
+        "_Critical__effect": "Double damage and 1 Dex damage"
+    },
+    {
+        "_Critical__name": "Clean Through",
+        "_Critical__effect": "Normal damage and 1d6 bleed and 1 Con drain"
+    },
+    {
+        "_Critical__name": "Deep Hurting",
+        "_Critical__effect": "Double damage and target is fatigued"
+    },
+    {
+        "_Critical__name": "Deep Wound",
+        "_Critical__effect": "Double damage and target is nauseated for 1 round (Fort negates)"
+    },
+    {
+        "_Critical__name": "Elbow pierced",
+        "_Critical__effect": "Double damage and target drops whatever is being held (1 item)"
+    },
+    {
+        "_Critical__name": "Eye Patch for You",
+        "_Critical__effect": "Triple damage and 1d2 Con drain. -4 Spot, Search and ranged attacks until healed"
+    },
+    {
+        "_Critical__name": "Forearm Piercing",
+        "_Critical__effect": "Double damage and target is disarmed (1 item)"
+    },
+    {
+        "_Critical__name": "Grazing Hit",
+        "_Critical__effect": "Normal damage and target is stunned for 1 round"
+    },
+    {
+        "_Critical__name": "Guarded Strike",
+        "_Critical__effect": "Double damage and +4 to your AC for 1 round"
+    },
+    {
+        "_Critical__name": "Hand Wound",
+        "_Critical__effect": "Normal damage and 1d2 Dex damage. -4 penalty on all rolls using that hand until healed"
+    },
+    {
+        "_Critical__name": "Heart Shot",
+        "_Critical__effect": "Triple damage and 1 Con bleed"
+    },
+    {
+        "_Critical__name": "In a Row",
+        "_Critical__effect": "Double damage to target and normal damage to adjacent target"
+    },
+    {
+        "_Critical__name": "Infection",
+        "_Critical__effect": "Double damage and target contracts filth fever (Fort negates)"
+    },
+    {
+        "_Critical__name": "Javelin Catcher",
+        "_Critical__effect": "Double damage and 1d6 bleed if from ranged attack"
+    },
+    {
+        "_Critical__name": "Kidney Piercing",
+        "_Critical__effect": "Double damage and target sickened for 2d4 round (Fort negates)"
+    },
+    {
+        "_Critical__name": "Knockback",
+        "_Critical__effect": "Double damage and target is pushed 1d6 squares directly away"
+    },
+    {
+        "_Critical__name": "Left Reeling",
+        "_Critical__effect": "Double damage and target takes a -2 penalty to AC for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Leg Wound",
+        "_Critical__effect": "Double damage and target's land speed is halved for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Lodged in the Bone",
+        "_Critical__effect": "Double damage and 2 bleed. This bleed requires a DC 20 Heal check to stop"
+    },
+    {
+        "_Critical__name": "Momentum",
+        "_Critical__effect": "Double damage and +2 on all your attack rolls for 1 round"
+    },
+    {
+        "_Critical__name": "Muscles Severed",
+        "_Critical__effect": "Normal damage and 1d6 Dex and 1d6 Str damage"
+    },
+    {
+        "_Critical__name": "Nailed in Place",
+        "_Critical__effect": "Double damage and target cannot move (DC 20 Str check negates)"
+    },
+    {
+        "_Critical__name": "Nerve Cluster",
+        "_Critical__effect": "Normal damage and target is stunned for 1d6 rounds (Fort save each round to act)"
+    },
+    {
+        "_Critical__name": "Nicked an artery",
+        "_Critical__effect": "Normal damage and 2d6 bleed"
+    },
+    {
+        "_Critical__name": "Organ Scramble",
+        "_Critical__effect": "Double damage and 1d6 Con damage"
+    },
+    {
+        "_Critical__name": "Overreaction",
+        "_Critical__effect": "Normal damage and target provokes attacks of opportunity from all threatening opponents"
+    },
+    {
+        "_Critical__name": "Painful Poke",
+        "_Critical__effect": "Double damage and target can take only one move or standard action until next round"
+    },
+    {
+        "_Critical__name": "Penetrating Wound",
+        "_Critical__effect": "Double damage and ignore DR"
+    },
+    {
+        "_Critical__name": "Perfect Strike",
+        "_Critical__effect": "Triple Damage"
+    },
+    {
+        "_Critical__name": "Pierced",
+        "_Critical__effect": "Double damage and target is dazed for 1 round"
+    },
+    {
+        "_Critical__name": "Pinhole",
+        "_Critical__effect": "Double damage and 1 bleed. Target takes 1 additional bleed each round until healed"
+    },
+    {
+        "_Critical__name": "Pinned Arm",
+        "_Critical__effect": "Double damage and one arm cannot move (DC 20 Str or Heal to be freed)"
+    },
+    {
+        "_Critical__name": "Punctured Lung",
+        "_Critical__effect": "Double damage and target begins to drown 3 round later. DC 20 Fort save each round to end effect"
+    },
+    {
+        "_Critical__name": "Ragged Wound",
+        "_Critical__effect": "Normal damage and 1d8 bleed"
+    },
+    {
+        "_Critical__name": "Right in the Ear",
+        "_Critical__effect": "Normal damage and 1 Int damage and 1 bleed"
+    },
+    {
+        "_Critical__name": "Shoulder Wound",
+        "_Critical__effect": "Double damage and 1d2 Str and Dex damage"
+    },
+    {
+        "_Critical__name": "Spinal Tap",
+        "_Critical__effect": "Normal damage and -4 penalty on attack rolls, skill checks and ability checks for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Spun Around",
+        "_Critical__effect": "Normal damage and target is flat footed for 1 round"
+    },
+    {
+        "_Critical__name": "Stinger",
+        "_Critical__effect": "Normal damage and target is sickened for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Sucking Chest Wound",
+        "_Critical__effect": "Double damage and target is exhausted (Fort negates)"
+    },
+    {
+        "_Critical__name": "Surprise Opening",
+        "_Critical__effect": "Double damage and one free attack against the target with a -5 penalty"
+    },
+    {
+        "_Critical__name": "Tenacious Wound",
+        "_Critical__effect": "Normal damage and 1d2 Con damage. Target does not heal this damage naturally"
+    },
+    {
+        "_Critical__name": "Tongue Piercing",
+        "_Critical__effect": "Normal damage and 1 Con damage. Target gains 50% spell failure chance for verbal spells until healed"
+    },
+    {
+        "_Critical__name": "Ventilated",
+        "_Critical__effect": "Double damage and 2d6 nonlethal damage"
+    },
+    {
+        "_Critical__name": "Vulnerable Spot",
+        "_Critical__effect": "Normal damage and target takes 1d4 ability damage of your choice"
+    }
+],
+	"slashing": [
+    {
+        "_Critical__name": "Across the Eyes",
+        "_Critical__effect": "Normal damage and target permanently blinded (Ref negates)"
+    },
+    {
+        "_Critical__name": "Armor Damage",
+        "_Critical__effect": "Double damage and normal damage to target's armor"
+    },
+    {
+        "_Critical__name": "Bad Parry",
+        "_Critical__effect": "Double damage and target is disarmed (1 item)"
+    },
+    {
+        "_Critical__name": "Bewildering Display",
+        "_Critical__effect": "Double damage and target takes a -2 penalty to AC for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Broad Swipe",
+        "_Critical__effect": "Normal damage and 1d8 bleed"
+    },
+    {
+        "_Critical__name": "Brow Cut",
+        "_Critical__effect": "Normal damage and 1d4 bleed. Target blinded while bleeding"
+    },
+    {
+        "_Critical__name": "Brow to Chin",
+        "_Critical__effect": "Normal damage and 1 Con and Cha damage. -2 penalty on Spot, 1 Search and ranged attacks until healed"
+    },
+    {
+        "_Critical__name": "Carve your Initials",
+        "_Critical__effect": "Normal damage and target suffers from humiliation and may only attack you (Will negates)"
+    },
+    {
+        "_Critical__name": "Cut Straps",
+        "_Critical__effect": "Double damage and double armor check penalty until fixed (DC 15 Craft)"
+    },
+    {
+        "_Critical__name": "Decapitation",
+        "_Critical__effect": "Double damage and death (Fort negates)"
+    },
+    {
+        "_Critical__name": "Delayed Wound",
+        "_Critical__effect": "Normal damage and target takes bleed damage equal to your normal damage"
+    },
+    {
+        "_Critical__name": "Disembowel",
+        "_Critical__effect": "Double damage and 1d4 Con damage and 1d6 bleed"
+    },
+    {
+        "_Critical__name": "Fingertipped",
+        "_Critical__effect": "Normal damage and 1 Dex damage. Target cannot use one hand until healed"
+    },
+    {
+        "_Critical__name": "Flat Blade Thwack",
+        "_Critical__effect": "Triple damage but all damage is nonlethal"
+    },
+    {
+        "_Critical__name": "Flay",
+        "_Critical__effect": "Normal damage plus 1d6 Str damage"
+    },
+    {
+        "_Critical__name": "Gory",
+        "_Critical__effect": "Normal damage and target is sickened for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Gut Slash",
+        "_Critical__effect": "Double damage and 1d4 bleed. Target cannot swallow whole"
+    },
+    {
+        "_Critical__name": "Hack and Slash",
+        "_Critical__effect": "Double damage and all critical threats against target automatically confirm for the next 3 rounds"
+    },
+    {
+        "_Critical__name": "Hamstring",
+        "_Critical__effect": "Normal damage and 1d2 Dex damage and target is knocked prone"
+    },
+    {
+        "_Critical__name": "Knockback",
+        "_Critical__effect": "Double damage and target is pushed 1d6 squares directly away"
+    },
+    {
+        "_Critical__name": "Lean into the Blow",
+        "_Critical__effect": "Triple damage, but you drop your weapon"
+    },
+    {
+        "_Critical__name": "Leg Swipe",
+        "_Critical__effect": "Double damage and target is knocked prone"
+    },
+    {
+        "_Critical__name": "Lip Cut",
+        "_Critical__effect": "Double damage and 1 bleed. Target gains 20% spell failure chance for verbal spells until healed"
+    },
+    {
+        "_Critical__name": "Long Gash",
+        "_Critical__effect": "Normal damage and 8 bleed. A successful Heal check cuts the bleeding in half, rather than ending it"
+    },
+    {
+        "_Critical__name": "Missing Digits",
+        "_Critical__effect": "Normal damage and target loses 1d3 fingers and takes 1 Con and Str drain (Fort negates)"
+    },
+    {
+        "_Critical__name": "Missing Ear",
+        "_Critical__effect": "Normal damage and 1 Cha drain. -4 penalty on Listen check until healed"
+    },
+    {
+        "_Critical__name": "Momentum",
+        "_Critical__effect": "Double damage and +2 on all your attack rolls for 1 round"
+    },
+    {
+        "_Critical__name": "Muscle Wound",
+        "_Critical__effect": "Double damage and 1d2 Str damage"
+    },
+    {
+        "_Critical__name": "Nerve Slice",
+        "_Critical__effect": "Double damage and target can take only one move or standard action next round"
+    },
+    {
+        "_Critical__name": "Overhand Chop",
+        "_Critical__effect": "Double damage and 1d4 bleed"
+    },
+    {
+        "_Critical__name": "Pain and Simple",
+        "_Critical__effect": "Double damage and 2d6 nonlethal damage"
+    },
+    {
+        "_Critical__name": "Paper Cut",
+        "_Critical__effect": "Normal damage and -4 penalty on attack rolls, skill checks and ability checks for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Parrying Strike",
+        "_Critical__effect": "Double damage and +4 to your AC for 1 round"
+    },
+    {
+        "_Critical__name": "Rupture Abdominal Cavity",
+        "_Critical__effect": "Double damage and 1 Con bleed"
+    },
+    {
+        "_Critical__name": "Sapping Slash",
+        "_Critical__effect": "Double damage and target is fatigued"
+    },
+    {
+        "_Critical__name": "Severed Hand",
+        "_Critical__effect": "Normal damage and target loses hand and takes 1d3 Con and Str drain (Fort negates)"
+    },
+    {
+        "_Critical__name": "Severed Spine",
+        "_Critical__effect": "Double damage and 3d6 Dex damage (Fort halves)"
+    },
+    {
+        "_Critical__name": "Severed Tendon",
+        "_Critical__effect": "Normal damage and 1d6 Dex damage"
+    },
+    {
+        "_Critical__name": "Shattered Jaw",
+        "_Critical__effect": "Normal damage and 1 Con damage. Target cannot speak or bite until healed"
+    },
+    {
+        "_Critical__name": "Shield Cleave",
+        "_Critical__effect": "Double damage and normal damage to target's shield"
+    },
+    {
+        "_Critical__name": "Spun Around",
+        "_Critical__effect": "Normal damage and target is flat-footed for 1 round"
+    },
+    {
+        "_Critical__name": "Stand Aside",
+        "_Critical__effect": "Double damage and push target 1 square in any direction"
+    },
+    {
+        "_Critical__name": "Surprise Opening",
+        "_Critical__effect": "Double damage and one free attack against the target with a -5 penalty"
+    },
+    {
+        "_Critical__name": "Swing Through",
+        "_Critical__effect": "Double damage and one free attack against an adjacent foe at the same bonus"
+    },
+    {
+        "_Critical__name": "Tangled",
+        "_Critical__effect": "Double damage and you may automatically grapple the target"
+    },
+    {
+        "_Critical__name": "Terrible Gash",
+        "_Critical__effect": "Double damage and 1 Cha drain"
+    },
+    {
+        "_Critical__name": "Throat Slash",
+        "_Critical__effect": "Normal damage and 2d6 bleed. Target cannot talk or breathe while bleeding"
+    },
+    {
+        "_Critical__name": "Ugly Wound",
+        "_Critical__effect": "Normal damage and 1d3 Cha damage and 1 Cha drain (Fort negates drain)"
+    },
+    {
+        "_Critical__name": "We've Got a Bleeder",
+        "_Critical__effect": "Normal damage and 2d6 bleed"
+    },
+    {
+        "_Critical__name": "Weapon Strike",
+        "_Critical__effect": "Double damage and normal damage to target's weapon"
+    },
+    {
+        "_Critical__name": "Wide Open",
+        "_Critical__effect": "Normal damage and target provokes attacks of opportunity from all threatening opponents"
+    },
+    {
+        "_Critical__name": "Wing Tear",
+        "_Critical__effect": "Double damage and target loses flight if it uses wings"
+    }
+],
+	"magic": [
+    {
+        "_Critical__name": "Allergic Reaction",
+        "_Critical__effect": "Double damage and 1d4 damage to a random ability score"
+    },
+    {
+        "_Critical__name": "Arcane Blast",
+        "_Critical__effect": "Double damage and 2d6 random energy damage (Reflex half)"
+    },
+    {
+        "_Critical__name": "Arcane Glow",
+        "_Critical__effect": "Double damage and target glows like faerie fire for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Arcane Goo",
+        "_Critical__effect": "Normal damage and target is entangled (DC 20 Str or Escape Artist to be freed)"
+    },
+    {
+        "_Critical__name": "Aura of Protection",
+        "_Critical__effect": "Double damage and +4 to your AC for 1 round"
+    },
+    {
+        "_Critical__name": "Call of the Wind",
+        "_Critical__effect": "Double damage or triple damage to animals, fey, magical beasts, and vermin"
+    },
+    {
+        "_Critical__name": "Combustion",
+        "_Critical__effect": "Double damage. If fire spell, target catches fire, taking 2d6 fire damage per round until extinguished"
+    },
+    {
+        "_Critical__name": "Concussive Spell",
+        "_Critical__effect": "Double damage and 1d4 bleed"
+    },
+    {
+        "_Critical__name": "Conduit",
+        "_Critical__effect": "Double damage and target takes a -4 penalty on saves vs. your spells for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Corrosive",
+        "_Critical__effect": "Double damage. If acid spell, target takes 2d6 acid damage for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Cut off from Magic",
+        "_Critical__effect": "Normal damage and target cannot cast spells or use spell-like abilities for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Dispelling Aura",
+        "_Critical__effect": "Normal damage and dispel magic on the target"
+    },
+    {
+        "_Critical__name": "Distraction",
+        "_Critical__effect": "Double damage and an illusion appears to attack foe, flanking him for you for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Draining Spell",
+        "_Critical__effect": "Double damage and target randomly loses one spell or one use of a spell-like ability"
+    },
+    {
+        "_Critical__name": "Electrocuted",
+        "_Critical__effect": "Double damage. If electricity spell, target stunned for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Elemental Call",
+        "_Critical__effect": "Normal damage. If elemental spell, Medium elemental appears to serve for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Excruciating",
+        "_Critical__effect": "Normal damage and target is sickened for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Eyeburn",
+        "_Critical__effect": "Normal damage and target blinded for 1d4 rounds (Fort negates)"
+    },
+    {
+        "_Critical__name": "Frozen",
+        "_Critical__effect": "Double damage. If cold spell, target takes 1d4 Dex damage"
+    },
+    {
+        "_Critical__name": "Funny Bone",
+        "_Critical__effect": "Double damage and target spends 1 round laughing (as hideous laughter spell, Will negates)"
+    },
+    {
+        "_Critical__name": "Hoarder's Wrath",
+        "_Critical__effect": "Double damage or triple damage to dragons"
+    },
+    {
+        "_Critical__name": "Hypnotic Link",
+        "_Critical__effect": "Double damage and you may give the target 1 suggestion (as the spell. Will negates)"
+    },
+    {
+        "_Critical__name": "I Love You, Man",
+        "_Critical__effect": "Normal damage and target is charmed for 3 rounds (Will negates)"
+    },
+    {
+        "_Critical__name": "Intense Strike",
+        "_Critical__effect": "Double damage and ignore energy resistance (but not immunity)"
+    },
+    {
+        "_Critical__name": "Knockback",
+        "_Critical__effect": "Double damage and target is pushed 1d6 squares directly away"
+    },
+    {
+        "_Critical__name": "Life Leech",
+        "_Critical__effect": "Normal damage and 1 negative level (Fort negates after 1 day)"
+    },
+    {
+        "_Critical__name": "Light Blast",
+        "_Critical__effect": "Double damage and target is blinded for 1 round"
+    },
+    {
+        "_Critical__name": "Lingering Magic",
+        "_Critical__effect": "Normal damage this round and half damage each round for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Maximum Effect",
+        "_Critical__effect": "Maximize all spell variables"
+    },
+    {
+        "_Critical__name": "Mind Cloud",
+        "_Critical__effect": "Double damage and target is dazed for 1 round"
+    },
+    {
+        "_Critical__name": "Nerve Damage",
+        "_Critical__effect": "Normal damage and target is slow for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Olfactory Overload",
+        "_Critical__effect": "Double damage and target loses scent and blindsense for 1 day"
+    },
+    {
+        "_Critical__name": "Petrified",
+        "_Critical__effect": "Normal damage and target is petrified for 1d4 hours (Fort negates)"
+    },
+    {
+        "_Critical__name": "Phased",
+        "_Critical__effect": "Double damage and target is incorporeal for 1d3 rounds (Will negates)"
+    },
+    {
+        "_Critical__name": "Planar Rift",
+        "_Critical__effect": "Normal damage and target sent to a random plane (Will negates)"
+    },
+    {
+        "_Critical__name": "Power Surge",
+        "_Critical__effect": "Triple damage"
+    },
+    {
+        "_Critical__name": "Pretty Colors",
+        "_Critical__effect": "Double damage and target is dazzled for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Returning Spell",
+        "_Critical__effect": "Double damage and spell is not lost"
+    },
+    {
+        "_Critical__name": "Roaring Spell",
+        "_Critical__effect": "Double damage and target is deafened for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Shrink Ray",
+        "_Critical__effect": "Normal damage and target is reduced for 3 rounds (as Reduce person, Will negates)"
+    },
+    {
+        "_Critical__name": "Side Effect",
+        "_Critical__effect": "Double damage and you become invisible for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Siren Song",
+        "_Critical__effect": "Double damage or triple damage to giants, humanoids and monstrous humanoids"
+    },
+    {
+        "_Critical__name": "Splash Spell",
+        "_Critical__effect": "Normal damage and half damage to all adjacent targets"
+    },
+    {
+        "_Critical__name": "Stunned",
+        "_Critical__effect": "Normal damage and target is stunned for 1 round"
+    },
+    {
+        "_Critical__name": "Terrifying Display",
+        "_Critical__effect": "Normal damage and target frightened for 1d4 rounds (Will negates)"
+    },
+    {
+        "_Critical__name": "Time Vortex",
+        "_Critical__effect": "Normal damage and target vanishes, reappearing 1d4 rounds later"
+    },
+    {
+        "_Critical__name": "Transposition",
+        "_Critical__effect": "Double damage and you and target switch places"
+    },
+    {
+        "_Critical__name": "Turned Around",
+        "_Critical__effect": "Double damage and target can take only one move or standard action next round"
+    },
+    {
+        "_Critical__name": "Unnatural Selection",
+        "_Critical__effect": "Double damage or triple damage to aberrations and outsiders"
+    },
+    {
+        "_Critical__name": "Vampiric Magic",
+        "_Critical__effect": "Normal damage. You are healed the same amount"
+    },
+    {
+        "_Critical__name": "Vulnerability",
+        "_Critical__effect": "Double damage and if the spell did elemental damage the target is now vulnerable to that element for 3 rounds"
+    },
+    {
+        "_Critical__name": "Wild Surge",
+        "_Critical__effect": "Normal damage and normal damage of a random energy type"
+    }
+]
+}

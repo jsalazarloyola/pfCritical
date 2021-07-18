@@ -1,0 +1,842 @@
+{
+	"melee": [
+    {
+        "_Critical__name": "All or Nothing",
+        "_Critical__effect": "You take a -1 penalty on attack rolls until you score a critical hit"
+    },
+    {
+        "_Critical__name": "Armor Smash",
+        "_Critical__effect": "Your attack deals damage to your armor"
+    },
+    {
+        "_Critical__name": "Attack the Darkness",
+        "_Critical__effect": "All your enemies have concealment from you for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Awkward Attack",
+        "_Critical__effect": "You take -2 penalty to AC for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Backswing",
+        "_Critical__effect": "The attack deals damage to you instead of the target"
+    },
+    {
+        "_Critical__name": "Bad Grip",
+        "_Critical__effect": "Your weapon deals nonlethal damage for the next 3 rounds"
+    },
+    {
+        "_Critical__name": "Bent",
+        "_Critical__effect": "You take -4 penalty on all attacks with this weapon until it is repaired (DC 20 Craft Check)"
+    },
+    {
+        "_Critical__name": "Better to Give",
+        "_Critical__effect": "You attack damages you instead. Use your target's Str modifier"
+    },
+    {
+        "_Critical__name": "Bohemian Earspoon",
+        "_Critical__effect": "You are deafened until healed (DC 15 Heal Check)"
+    },
+    {
+        "_Critical__name": "Bonk",
+        "_Critical__effect": "You are stunned for 1 round (Fort Negates)"
+    },
+    {
+        "_Critical__name": "Broken Blade",
+        "_Critical__effect": "Your weapon is destroyed (Ref Negates) Magic weapons use their own save bonus (DMG 214)"
+    },
+    {
+        "_Critical__name": "Broken Haft",
+        "_Critical__effect": "Your weapon loses reach. You have a -4 penalty on attack rolls with it until repaired (DC 20 Craft check)"
+    },
+    {
+        "_Critical__name": "Butterfingers",
+        "_Critical__effect": "Drop your weapon"
+    },
+    {
+        "_Critical__name": "Catastrophic Failure",
+        "_Critical__effect": "You fall unconscious for 1d6 rounds (Will negates)"
+    },
+    {
+        "_Critical__name": "Catch your breath",
+        "_Critical__effect": "You can only take a move action next round"
+    },
+    {
+        "_Critical__name": "Critical Mistake",
+        "_Critical__effect": "The attack hits you and is a critical threat. You must roll to confirm the critical hit"
+    },
+    {
+        "_Critical__name": "Cutter",
+        "_Critical__effect": "You take 1 point of Str bleed"
+    },
+    {
+        "_Critical__name": "Eat Dirt",
+        "_Critical__effect": "You fall prone and are blinded for 1d3 rounds (Fort Negates)"
+    },
+    {
+        "_Critical__name": "Fling",
+        "_Critical__effect": "You drop your weapon and it lands 1d6 squares away in a random direction"
+    },
+    {
+        "_Critical__name": "Fog of War",
+        "_Critical__effect": "You threaten no square for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Funny Bone",
+        "_Critical__effect": "You drop whatever is in your off hand"
+    },
+    {
+        "_Critical__name": "Go For The Eyes",
+        "_Critical__effect": "You are blinded for 1 round"
+    },
+    {
+        "_Critical__name": "Hand it over",
+        "_Critical__effect": "Your target gains possession of your weapon (Ref Negates)"
+    },
+    {
+        "_Critical__name": "I told you it was sharp",
+        "_Critical__effect": "You take 1d6 points of bleed"
+    },
+    {
+        "_Critical__name": "No Way",
+        "_Critical__effect": "Your attack hits the target, but deals minimum damage"
+    },
+    {
+        "_Critical__name": "Notched",
+        "_Critical__effect": "Your weapon takes 1d6 points of damage, ignoring hardness"
+    },
+    {
+        "_Critical__name": "Off Balance",
+        "_Critical__effect": "You take a -4 penalty on all attack rolls for 1 round"
+    },
+    {
+        "_Critical__name": "On the Receiving End",
+        "_Critical__effect": "The attack deals damage to you instead of the target"
+    },
+    {
+        "_Critical__name": "Overextend",
+        "_Critical__effect": "You provoke an attack of opportunity from all adjacent opponents"
+    },
+    {
+        "_Critical__name": "Parry! Dodge! Spin! Thrust!",
+        "_Critical__effect": "You are dazed for 1 round"
+    },
+    {
+        "_Critical__name": "Pin Prick",
+        "_Critical__effect": "You take 1 point of bleed"
+    },
+    {
+        "_Critical__name": "Pointy End Goes There",
+        "_Critical__effect": "You take 1 point of Con damage"
+    },
+    {
+        "_Critical__name": "Pulled Muscle",
+        "_Critical__effect": "You take 1d4 points of Str damage"
+    },
+    {
+        "_Critical__name": "Punt",
+        "_Critical__effect": "Your weapon flies 2d6 squares in a random direction"
+    },
+    {
+        "_Critical__name": "Second Thoughts",
+        "_Critical__effect": "You are sickened for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Shield Crash",
+        "_Critical__effect": "Your attack deals damage to your shield"
+    },
+    {
+        "_Critical__name": "Slipped",
+        "_Critical__effect": "You are knocked prone"
+    },
+    {
+        "_Critical__name": "Sorry",
+        "_Critical__effect": "Your attack hits an ally adjacent to you or the target"
+    },
+    {
+        "_Critical__name": "Spinning Swing",
+        "_Critical__effect": "You are sickened for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Strain",
+        "_Critical__effect": "You take 1d4 points of Dex damage"
+    },
+    {
+        "_Critical__name": "Stuck",
+        "_Critical__effect": "Your weapon is stuck in a nearby surface. DC 20 Str check to free it"
+    },
+    {
+        "_Critical__name": "Surrounded by Foes",
+        "_Critical__effect": "Your attack hits an ally within reach and is a critical threat. You must roll to confirm the critical hit"
+    },
+    {
+        "_Critical__name": "This is Bad",
+        "_Critical__effect": "You take an amount of bleed equal to your Str bonus (minimum 1)"
+    },
+    {
+        "_Critical__name": "This sword is too heavy",
+        "_Critical__effect": "You are fatigued"
+    },
+    {
+        "_Critical__name": "Too Much Stuff",
+        "_Critical__effect": "You become entangled in your gear until you spend a standard action to free yourself"
+    },
+    {
+        "_Critical__name": "Vibration",
+        "_Critical__effect": "If you're using a bludgeoning weapon, you take 1d3 of Str damage and drop your weapon"
+    },
+    {
+        "_Critical__name": "Wait! What?",
+        "_Critical__effect": "You are confused for 1 round"
+    },
+    {
+        "_Critical__name": "Who Was That",
+        "_Critical__effect": "You are dazed for 1d3 rounds"
+    },
+    {
+        "_Critical__name": "Wide Open",
+        "_Critical__effect": "You are flat-footed for 1 round"
+    },
+    {
+        "_Critical__name": "Winded",
+        "_Critical__effect": "You are exhausted (Fort negates)"
+    },
+    {
+        "_Critical__name": "Wrong End",
+        "_Critical__effect": "If you're using a slashing weapon, you take 1d6 points of damage and 1 point of bleed"
+    },
+    {
+        "_Critical__name": "You Meant to do That",
+        "_Critical__effect": "Move 10 feet in a random direction and provoke attacks of opportunity as normal"
+    }
+],
+	"ranged": [
+    {
+        "_Critical__name": "Aim Carefully Next Time",
+        "_Critical__effect": "For 3 rounds, you must spend a full round action to make a single attack"
+    },
+    {
+        "_Critical__name": "All Thumbs",
+        "_Critical__effect": "You lose your Dex bonus on attack rolls for 3 rounds"
+    },
+    {
+        "_Critical__name": "Amazing Miss",
+        "_Critical__effect": "You are stunned for 1 round (Fort negates)"
+    },
+    {
+        "_Critical__name": "Archer's Elbow",
+        "_Critical__effect": "You take a -2 penalty on all ranged attack rolls for 1d4 minutes"
+    },
+    {
+        "_Critical__name": "Arching Back",
+        "_Critical__effect": "You are fatigued"
+    },
+    {
+        "_Critical__name": "Awkward Attack",
+        "_Critical__effect": "You take -2 penalty to AC for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Backfire",
+        "_Critical__effect": "The attack deals damage to you instead of the target"
+    },
+    {
+        "_Critical__name": "Bad Alignment",
+        "_Critical__effect": "You take -4 penalty on all attacks with this weapon until repaired (DC 20 Craft check)"
+    },
+    {
+        "_Critical__name": "Broken",
+        "_Critical__effect": "Your weapon is destroyed (Ref negates). Magic weapons use their own save bonus (DMG 214)"
+    },
+    {
+        "_Critical__name": "Bull's Eye",
+        "_Critical__effect": "Your shot ricochets and hits you near the eye. You are blinded for 1 round"
+    },
+    {
+        "_Critical__name": "Close to the Ear",
+        "_Critical__effect": "You are deafened until healed (DC 15 Heal Check)"
+    },
+    {
+        "_Critical__name": "Cracked",
+        "_Critical__effect": "Your weapon (not ammunition) takes 1d6 points of damage, ignoring hardness"
+    },
+    {
+        "_Critical__name": "Don't Hit Me!",
+        "_Critical__effect": "For 3 rounds, you take an additional -2 penalty on ranged attacks for each ally in melee combat with your target"
+    },
+    {
+        "_Critical__name": "Double Miss",
+        "_Critical__effect": "You use twice as much ammunition on this attack"
+    },
+    {
+        "_Critical__name": "Errant Aim",
+        "_Critical__effect": "Reroll attack against creature nearest the target (yourself excluded)"
+    },
+    {
+        "_Critical__name": "Everything you Got",
+        "_Critical__effect": "You are exhausted (Fort negates)"
+    },
+    {
+        "_Critical__name": "Friendly Fire",
+        "_Critical__effect": "Your attack hits your ally closest to the target"
+    },
+    {
+        "_Critical__name": "Head Rush",
+        "_Critical__effect": "You are sickened for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Huh?",
+        "_Critical__effect": "You are confused for 1 round"
+    },
+    {
+        "_Critical__name": "In the Line of Fire",
+        "_Critical__effect": "Your attack hits the nearest ally and is a critical threat. You must roll to confirm the critical hit"
+    },
+    {
+        "_Critical__name": "Insecure",
+        "_Critical__effect": "You take a -1 penalty on attack rolls for 1d4 rounds or until you score a critical hit"
+    },
+    {
+        "_Critical__name": "Klutz",
+        "_Critical__effect": "You drop your weapon"
+    },
+    {
+        "_Critical__name": "Lost Grip",
+        "_Critical__effect": "You can only take a move action next round"
+    },
+    {
+        "_Critical__name": "Lost the Target",
+        "_Critical__effect": "You take a -4 penalty on all attack rolls for 1 round"
+    },
+    {
+        "_Critical__name": "Lowered Guard",
+        "_Critical__effect": "You provoke attacks of opportunity from all threatening foes"
+    },
+    {
+        "_Critical__name": "Misjudged the distance",
+        "_Critical__effect": "All attack rolls beyond the first ranged increment have triple the normal distance penalty for 3 rounds"
+    },
+    {
+        "_Critical__name": "Mix it Up",
+        "_Critical__effect": "You are unable to make ranged attacks for the next 1d6 rounds"
+    },
+    {
+        "_Critical__name": "My Spleeny Bits!",
+        "_Critical__effect": "You take 1 point of Con damage"
+    },
+    {
+        "_Critical__name": "Nicked",
+        "_Critical__effect": "You take 1 point of bleed"
+    },
+    {
+        "_Critical__name": "Not My Pony",
+        "_Critical__effect": "Your attack hits the nearest allied animal or mount"
+    },
+    {
+        "_Critical__name": "Notched Fingers",
+        "_Critical__effect": "You take 1d6 points of bleed"
+    },
+    {
+        "_Critical__name": "Overcompensate",
+        "_Critical__effect": "All targets with cover gain an additional +4 bonus to AC against you for 3 rounds"
+    },
+    {
+        "_Critical__name": "Overthrow",
+        "_Critical__effect": "If attack was made with a thrown weapon, the weapon travels 5 times its range increment in a random direction"
+    },
+    {
+        "_Critical__name": "Phantom Wind",
+        "_Critical__effect": "You compensate for a breeze which isn't there. You take -2 penalty on ranged attack rolls for 3 rounds"
+    },
+    {
+        "_Critical__name": "Pinch in Parts",
+        "_Critical__effect": "You take 1d6 points of damage"
+    },
+    {
+        "_Critical__name": "Recoil",
+        "_Critical__effect": "You move backward 1 square and fall prone"
+    },
+    {
+        "_Critical__name": "Seeing Double",
+        "_Critical__effect": "All your attacks have a 50% miss chance for 1 round"
+    },
+    {
+        "_Critical__name": "Shot Your Foot",
+        "_Critical__effect": "You take 1d2 points of Dex damage and your speed is reduced by half until healed"
+    },
+    {
+        "_Critical__name": "Snapped String",
+        "_Critical__effect": "If attack was made with a bow or crossbow, the string breaks and requires 1d3 round to fix"
+    },
+    {
+        "_Critical__name": "So much Blood",
+        "_Critical__effect": "You are sickened for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Spilled Ammo",
+        "_Critical__effect": "Your ammunition falls from its container and takes 1d6 rounds to gather up"
+    },
+    {
+        "_Critical__name": "Sprain",
+        "_Critical__effect": "You take 1d4 points of Dex damage"
+    },
+    {
+        "_Critical__name": "Tied Up",
+        "_Critical__effect": "You become entangled in your gear until you spend a standard action to free yourself"
+    },
+    {
+        "_Critical__name": "Torn Tendon",
+        "_Critical__effect": "You take 1 point of Dex bleed"
+    },
+    {
+        "_Critical__name": "Tunnel Vision",
+        "_Critical__effect": "For the next 3 rounds, you have a +1 bonus on attack rolls, but you flat-footed"
+    },
+    {
+        "_Critical__name": "Um, oops",
+        "_Critical__effect": "The attack deals damage to you instead of the target"
+    },
+    {
+        "_Critical__name": "Weapon Jam",
+        "_Critical__effect": "If using a projectile weapon it does not function. Spend 1 standard action to clear"
+    },
+    {
+        "_Critical__name": "What are the Odds?",
+        "_Critical__effect": "If you made a thrown attack, you hit the target, but the weapon ends up in the target's possession"
+    },
+    {
+        "_Critical__name": "Whoops!",
+        "_Critical__effect": "You are knocked prone"
+    },
+    {
+        "_Critical__name": "Wide Open",
+        "_Critical__effect": "You are flat-footed for 1 round"
+    },
+    {
+        "_Critical__name": "Wrong Weapon",
+        "_Critical__effect": "If you made a thrown attack, you throw a random object from your gear"
+    },
+    {
+        "_Critical__name": "You'll Shoot Your Eye Out",
+        "_Critical__effect": "The attack hits you and is a critical threat. You must roll to confirm the critical hit"
+    }
+],
+	"natural": [
+    {
+        "_Critical__name": "Awkward Attack",
+        "_Critical__effect": "You take a -2 penalty to AC for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Bad Headbutt",
+        "_Critical__effect": "You are stunned for 1 round (Fort negates)"
+    },
+    {
+        "_Critical__name": "Battered",
+        "_Critical__effect": "You take a -2 penalty on skill checks and saves for 1d4 hours"
+    },
+    {
+        "_Critical__name": "Bleeding Fist",
+        "_Critical__effect": "You take 1d6 points of bleed"
+    },
+    {
+        "_Critical__name": "Bone Bruise",
+        "_Critical__effect": "You take 1d2 point of Con damage"
+    },
+    {
+        "_Critical__name": "Broke a Nail",
+        "_Critical__effect": "You take 1d4 points of damage and you cannot use this attack until healed"
+    },
+    {
+        "_Critical__name": "Broken Tooth",
+        "_Critical__effect": "You take a -2 penalty on attack rolls for 1d6 minutes"
+    },
+    {
+        "_Critical__name": "Bruised Ego",
+        "_Critical__effect": "You can attack no other target for 1d4 rounds (or until the target is dead)]"
+    },
+    {
+        "_Critical__name": "Brutal Collision",
+        "_Critical__effect": "Your attack hits, but you are stunned for 2 rounds (For save reduces the stun to 1 round)"
+    },
+    {
+        "_Critical__name": "Caught Your Attack",
+        "_Critical__effect": "The target may attempt to trip, bull rush or overrun you (target's choice)"
+    },
+    {
+        "_Critical__name": "Don't Pick At It",
+        "_Critical__effect": "You take 1 point of Con damage"
+    },
+    {
+        "_Critical__name": "Eye Strain",
+        "_Critical__effect": "You are blinded for 1 round"
+    },
+    {
+        "_Critical__name": "Ferocious Fumble",
+        "_Critical__effect": "Your attack hits an ally within reach and is a critical threat. You must roll to confirm the critical hit"
+    },
+    {
+        "_Critical__name": "Fist Meets Face",
+        "_Critical__effect": "The attack hits you and is a critical threat. You must roll to confirm the critical hit"
+    },
+    {
+        "_Critical__name": "Frustration",
+        "_Critical__effect": "You take a -4 penalty on all attack rolls for 1 round"
+    },
+    {
+        "_Critical__name": "Got Too Close",
+        "_Critical__effect": "Your attack hits the target but the target may start a grapple against you for free"
+    },
+    {
+        "_Critical__name": "Great Roar",
+        "_Critical__effect": "You are deafened until healed (DC 15 Heal Check)"
+    },
+    {
+        "_Critical__name": "Hangnail",
+        "_Critical__effect": "If this was a claw attack, slam or unarmed strike, you cannot use that attack for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "He Bit Your Fist",
+        "_Critical__effect": "The target deals bite damage to you"
+    },
+    {
+        "_Critical__name": "He's Sharp",
+        "_Critical__effect": "You take 1d6 points of damage & your Str modifier"
+    },
+    {
+        "_Critical__name": "Head, Meet Wall",
+        "_Critical__effect": "You are dazed for 1d3 rounds"
+    },
+    {
+        "_Critical__name": "I Bit My Tug",
+        "_Critical__effect": "You take 1 point of bleed"
+    },
+    {
+        "_Critical__name": "Ingrown Nail",
+        "_Critical__effect": "You take a -1 penalty on attack rolls until you score a critical hit"
+    },
+    {
+        "_Critical__name": "Jam a Finger",
+        "_Critical__effect": "Your target takes normal damage, you take double damage"
+    },
+    {
+        "_Critical__name": "Just a Taste",
+        "_Critical__effect": "Your attack hits an ally adjacent to you or the target"
+    },
+    {
+        "_Critical__name": "Muscle Tear",
+        "_Critical__effect": "You take 1d4 points of Str damage"
+    },
+    {
+        "_Critical__name": "Not the Weak Point",
+        "_Critical__effect": "Your enemy's armor takes 1d6 points of damage. You take 1d6 points of damage and cannot use that attack for 1d3 rounds"
+    },
+    {
+        "_Critical__name": "Off Balance",
+        "_Critical__effect": "You can only take a move action next round"
+    },
+    {
+        "_Critical__name": "Out of Position",
+        "_Critical__effect": "You cannot use this attack for 1 round"
+    },
+    {
+        "_Critical__name": "Overexertion",
+        "_Critical__effect": "You are exhausted (Fort Negates)"
+    },
+    {
+        "_Critical__name": "Overextend",
+        "_Critical__effect": "You provoke an attack of opportunity from all adjacent opponents"
+    },
+    {
+        "_Critical__name": "Overthink It",
+        "_Critical__effect": "Your target's armor and natural armor bonuses are doubled against you for 3 rounds"
+    },
+    {
+        "_Critical__name": "Pinched Nerve",
+        "_Critical__effect": "If you had reach greater than 5 feet, it is reduced to 5 feet for 3 rounds"
+    },
+    {
+        "_Critical__name": "Pins & Needles",
+        "_Critical__effect": "You are sickened for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Punctured Foot",
+        "_Critical__effect": "You take 1d3 points of damage and your speed is halved until healed"
+    },
+    {
+        "_Critical__name": "Smash the Floor",
+        "_Critical__effect": "You kick up dust that blinds you for 1d4 rounds (Fort negates)"
+    },
+    {
+        "_Critical__name": "Sneeze!",
+        "_Critical__effect": "You are dazed for 1 round"
+    },
+    {
+        "_Critical__name": "Sprain",
+        "_Critical__effect": "You take 1d4 points of Dex damage"
+    },
+    {
+        "_Critical__name": "Stinging Failure",
+        "_Critical__effect": "You take 1d6 points of nonlethal damage and a -2 penalty on attack rolls with that attack for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "Stop Hitting Yourself",
+        "_Critical__effect": "The attack deals damage to you instead of the target"
+    },
+    {
+        "_Critical__name": "That Tastes Awful!",
+        "_Critical__effect": "If this was a bite attack, you are nauseated for 1d6 rounds"
+    },
+    {
+        "_Critical__name": "Tiring Attack",
+        "_Critical__effect": "You are fatigued"
+    },
+    {
+        "_Critical__name": "Torn Muscle",
+        "_Critical__effect": "You take 1 point of Str drain (Fort negates)"
+    },
+    {
+        "_Critical__name": "Tripped",
+        "_Critical__effect": "You are knocked prone"
+    },
+    {
+        "_Critical__name": "Twisted",
+        "_Critical__effect": "You become entangled in your gear until you spend a standard action to free yourself"
+    },
+    {
+        "_Critical__name": "Unintentional Move",
+        "_Critical__effect": "Move 10 feet in a random direction and provoke attacks of opportunity as normal"
+    },
+    {
+        "_Critical__name": "Upset Tummy",
+        "_Critical__effect": "You are sickened for 1d4 rounds"
+    },
+    {
+        "_Critical__name": "We have a Wiener",
+        "_Critical__effect": "You fall unconscious for 1d6 round (Will Negates)"
+    },
+    {
+        "_Critical__name": "Whiff",
+        "_Critical__effect": "The attack deals damage to you instead of the target"
+    },
+    {
+        "_Critical__name": "Whirlwind of Shame",
+        "_Critical__effect": "Your attack deals damage to all targets adjacent to you except the original target"
+    },
+    {
+        "_Critical__name": "Wide Open",
+        "_Critical__effect": "You are flat-footed for 1 round"
+    },
+    {
+        "_Critical__name": "Winds of Change",
+        "_Critical__effect": "You threaten no squares for 1d6 rounds"
+    }
+],
+	"magic": [
+    {
+        "_Critical__name": "Acidic Backlash",
+        "_Critical__effect": "Parry! Dodge! Spin! Thrust!"
+    },
+    {
+        "_Critical__name": "Apprentice Move",
+        "_Critical__effect": "Spinning Swing"
+    },
+    {
+        "_Critical__name": "Arcane Fire",
+        "_Critical__effect": "Shield Crash"
+    },
+    {
+        "_Critical__name": "Backblast",
+        "_Critical__effect": "Hand it over"
+    },
+    {
+        "_Critical__name": "Blastoff",
+        "_Critical__effect": "Attack the Darkness"
+    },
+    {
+        "_Critical__name": "Bleeding Eyes",
+        "_Critical__effect": "Notched"
+    },
+    {
+        "_Critical__name": "Can you hear me now?",
+        "_Critical__effect": "Awkward Attack"
+    },
+    {
+        "_Critical__name": "Caster's Block",
+        "_Critical__effect": "Go For The Eyes"
+    },
+    {
+        "_Critical__name": "Clatto Verata Necktie",
+        "_Critical__effect": "Backswing"
+    },
+    {
+        "_Critical__name": "Cold Snap",
+        "_Critical__effect": "Fog of War"
+    },
+    {
+        "_Critical__name": "Cursed",
+        "_Critical__effect": "Wide Open"
+    },
+    {
+        "_Critical__name": "Distance Rift",
+        "_Critical__effect": "Pointy End Goes There"
+    },
+    {
+        "_Critical__name": "Electrical Feedback",
+        "_Critical__effect": "Winded"
+    },
+    {
+        "_Critical__name": "Energy Transfer",
+        "_Critical__effect": "This is Bad"
+    },
+    {
+        "_Critical__name": "Error!",
+        "_Critical__effect": "Overextend"
+    },
+    {
+        "_Critical__name": "Fragmented Magic",
+        "_Critical__effect": "Better to Give"
+    },
+    {
+        "_Critical__name": "Hit by the Ugly Forest",
+        "_Critical__effect": "Slipped"
+    },
+    {
+        "_Critical__name": "How did that happen?",
+        "_Critical__effect": "Cutter"
+    },
+    {
+        "_Critical__name": "It's Sparkly",
+        "_Critical__effect": "Wait! What?"
+    },
+    {
+        "_Critical__name": "Jumbled Components",
+        "_Critical__effect": "No Way"
+    },
+    {
+        "_Critical__name": "Left Reeling",
+        "_Critical__effect": "Fling"
+    },
+    {
+        "_Critical__name": "Magic Fatigue",
+        "_Critical__effect": "Catch your breath"
+    },
+    {
+        "_Critical__name": "Magical Smackdown",
+        "_Critical__effect": "Surrounded by Foes"
+    },
+    {
+        "_Critical__name": "Magical Vacuum",
+        "_Critical__effect": "Second Thoughts"
+    },
+    {
+        "_Critical__name": "Mental Slip",
+        "_Critical__effect": "You Meant to do That"
+    },
+    {
+        "_Critical__name": "Mind Drain",
+        "_Critical__effect": "Broken Haft"
+    },
+    {
+        "_Critical__name": "Monster Rift",
+        "_Critical__effect": "Bohemian Earspoon"
+    },
+    {
+        "_Critical__name": "Nose Bleed",
+        "_Critical__effect": "Sorry"
+    },
+    {
+        "_Critical__name": "Not me, You fool!",
+        "_Critical__effect": "I told you it was sharp"
+    },
+    {
+        "_Critical__name": "Nothing to Fear",
+        "_Critical__effect": "Broken Blade"
+    },
+    {
+        "_Critical__name": "Now I see you\u00e2\u20ac\u00a6",
+        "_Critical__effect": "Wrong End"
+    },
+    {
+        "_Critical__name": "Poor Trade",
+        "_Critical__effect": "Catastrophic Failure"
+    },
+    {
+        "_Critical__name": "Power Down",
+        "_Critical__effect": "Who Was That"
+    },
+    {
+        "_Critical__name": "Power Drain",
+        "_Critical__effect": "Armor Smash"
+    },
+    {
+        "_Critical__name": "Power Transfer",
+        "_Critical__effect": "Eat Dirt"
+    },
+    {
+        "_Critical__name": "Reflection",
+        "_Critical__effect": "On the Receiving End"
+    },
+    {
+        "_Critical__name": "Side Effect",
+        "_Critical__effect": "Bent"
+    },
+    {
+        "_Critical__name": "Spell Shield",
+        "_Critical__effect": "Funny Bone"
+    },
+    {
+        "_Critical__name": "Tangled",
+        "_Critical__effect": "Off Balance"
+    },
+    {
+        "_Critical__name": "The Magic is Gone",
+        "_Critical__effect": "This sword is too heavy"
+    },
+    {
+        "_Critical__name": "This is Hard",
+        "_Critical__effect": "All or Nothing"
+    },
+    {
+        "_Critical__name": "Tiring Spell",
+        "_Critical__effect": "Pin Prick"
+    },
+    {
+        "_Critical__name": "Unexpected Blast",
+        "_Critical__effect": "Vibration"
+    },
+    {
+        "_Critical__name": "Vertigo",
+        "_Critical__effect": "Too Much Stuff"
+    },
+    {
+        "_Critical__name": "Weak-Minded Fool",
+        "_Critical__effect": "Bad Grip"
+    },
+    {
+        "_Critical__name": "Weakened",
+        "_Critical__effect": "Bonk"
+    },
+    {
+        "_Critical__name": "Why Me?",
+        "_Critical__effect": "Pulled Muscle"
+    },
+    {
+        "_Critical__name": "Wild Magic",
+        "_Critical__effect": "Butterfingers"
+    },
+    {
+        "_Critical__name": "You made Him Stronger",
+        "_Critical__effect": "Stuck"
+    },
+    {
+        "_Critical__name": "You made him bigger",
+        "_Critical__effect": "Punt"
+    },
+    {
+        "_Critical__name": "You made him faster",
+        "_Critical__effect": "Critical Mistake"
+    },
+    {
+        "_Critical__name": "You made him tougher",
+        "_Critical__effect": "Strain"
+    }
+]
+}
