@@ -12,10 +12,17 @@ from main_ui import UiMainWindow
 
 
 class Critical:
-    def __init__(self, name="", effect="", **kwargs):
+    """Provides handlers for critical (hit or fumble) descriptions
+
+    It contains the name and effect of the critical effect.
+    """
+
+    def __init__(self, name: str = "", effect: str = "", **kwargs):
+        """Constructor"""
         self.__name = name
         self.__effect = effect
 
+        # I need to check whether this will be necessary in the future
         for key in kwargs:
             if hasattr(self, key):
                 setattr(self, key, kwargs[key])
@@ -38,6 +45,7 @@ class Critical:
     def effect(self, effect):
         self.__effect = effect
 
+    # Operator needed for sorting
     def __lt__(self, other) -> bool:
         return self.__name < other.name
 
@@ -49,19 +57,25 @@ class Critical:
 
 
 class CriticalLoader:
+    """Loader for JSON files with information for critical roles"""
     def __init__(self, filename):
+        # Loads the required file
         with open(filename) as f:
             criticals = json.load(f)
 
-        self.critical_dict = {}
+        # Dictionary for critical lists
+        # Each key should be a critical type, which are strings
+        self.__critical_dict = {}
         for key in criticals:
-            self.critical_dict[key] = [Critical(**d) for d in criticals[key]]
+            self.__critical_dict[key] = [Critical(**d) for d in criticals[key]]
 
-    def random_select(self, crit_type) -> Critical:
+    def random_select(self, crit_type: str) -> Critical:
+        """Returns a randomly selected critical according to the type"""
         return random.choice(self[crit_type])
 
     def __getitem__(self, item):
-        return self.critical_dict[item]
+        """Parser to the internal dictionary"""
+        return self.__critical_dict[item]
 
 
 # Ordenar esta mierda
