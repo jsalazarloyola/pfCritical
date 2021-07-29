@@ -84,14 +84,23 @@ FUMBLE = CriticalLoader("fumble.json")
 
 
 class ButtonSelector:
+    """Parser for the buttons.
+
+    Each method sets the text box in the interface with the right format for the required
+    effect, be it a critical hit or a fumble.
+    """
+
     def __init__(self, ui):
+        # Just sets the interface to update with the effects
         self.__ui = ui
 
     def add_critical_effect(self, effect: Critical):
+        """Sets text for critical hit"""
         self.__ui.results_box.setHtml(f'<p style="color: blue"><strong>{effect.name}</strong></p>'
                                       f'<p>{effect.effect}</p>')
 
     def add_fumble_effect(self, effect: Critical):
+        """Sets text for critical fumble"""
         self.__ui.results_box.setHtml(f'<p style="color: red"><strong>{effect.name}</strong></p>'
                                       f'<p>{effect.effect}</p>')
 
@@ -121,6 +130,7 @@ class ButtonSelector:
 
 
 if __name__ == '__main__':
+    # Main application
     app = QApplication([])
 
     # Interface
@@ -134,7 +144,7 @@ if __name__ == '__main__':
 
     selector = ButtonSelector(ui_setter)
 
-    # Signals
+    # Set signals and targets
     ui_setter.bludgeoning_btn.clicked.connect(selector.get_bludgeoning_crit)
     ui_setter.slashing_btn.clicked.connect(selector.get_slashing_crit)
     ui_setter.piercing_btn.clicked.connect(selector.get_piercing_crit)
@@ -145,6 +155,8 @@ if __name__ == '__main__':
     ui_setter.natural_btn.clicked.connect(selector.get_natural_fumble)
     ui_setter.magic_fumble_btn.clicked.connect(selector.get_magic_fumble)
 
+    # Show main window
     mw.show()
 
+    # Main loop
     sys.exit(app.exec_())
