@@ -13,12 +13,12 @@ from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        if not MainWindow.objectName():
-            MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(574, 278)
-        self.centralwidget = QWidget(MainWindow)
+class UiMainWindow(object):
+    def setup_ui(self, main_window: QMainWindow):
+        if not main_window.objectName():
+            main_window.setObjectName(u"MainWindow")
+        main_window.resize(574, 278)
+        self.centralwidget = QWidget(main_window)
         self.centralwidget.setObjectName(u"centralwidget")
         self.gridLayoutWidget = QWidget(self.centralwidget)
         self.gridLayoutWidget.setObjectName(u"gridLayoutWidget")
@@ -88,18 +88,18 @@ class Ui_MainWindow(object):
         font1 = QFont()
         font1.setPointSize(12)
         self.results_box.setFont(font1)
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.statusbar = QStatusBar(MainWindow)
+        main_window.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(main_window)
         self.statusbar.setObjectName(u"statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        main_window.setStatusBar(self.statusbar)
 
-        self.retranslateUi(MainWindow)
+        self.retranslate_ui(main_window)
 
-        QMetaObject.connectSlotsByName(MainWindow)
+        QMetaObject.connectSlotsByName(main_window)
     # setupUi
 
-    def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Cr\u00edticos para Pathfinder", None))
+    def retranslate_ui(self, main_window):
+        main_window.setWindowTitle(QCoreApplication.translate("MainWindow", u"Cr\u00edticos para Pathfinder", None))
         self.slashing_btn.setText(QCoreApplication.translate("MainWindow", u"Cortante", None))
         self.bludgeoning_btn.setText(QCoreApplication.translate("MainWindow", u"Contundente", None))
         self.piercing_btn.setText(QCoreApplication.translate("MainWindow", u"Penetrante", None))
@@ -110,5 +110,5 @@ class Ui_MainWindow(object):
         self.ranged_btn.setText(QCoreApplication.translate("MainWindow", u"A distancia", None))
         self.natural_btn.setText(QCoreApplication.translate("MainWindow", u"Ataque natural", None))
         self.magic_fumble_btn.setText(QCoreApplication.translate("MainWindow", u"Magia", None))
-    # retranslateUi
+    # retranslate_ui
 

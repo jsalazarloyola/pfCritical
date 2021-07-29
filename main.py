@@ -8,7 +8,7 @@ import sys
 
 from PySide2.QtWidgets import QApplication, QMainWindow
 
-from main_ui import Ui_MainWindow
+from main_ui import UiMainWindow
 
 
 class Critical:
@@ -110,26 +110,26 @@ if __name__ == '__main__':
     app = QApplication([])
 
     # Interface
-    ui = Ui_MainWindow()
+    ui_setter = UiMainWindow()
 
     # Main window
     mw = QMainWindow()
 
     # Setup UI
-    ui.setupUi(mw)
+    ui_setter.setup_ui(mw)
 
-    selector = ButtonSelector(ui)
+    selector = ButtonSelector(ui_setter)
 
     # Signals
-    ui.bludgeoning_btn.clicked.connect(selector.get_bludgeoning_crit)
-    ui.slashing_btn.clicked.connect(selector.get_slashing_crit)
-    ui.piercing_btn.clicked.connect(selector.get_piercing_crit)
-    ui.magic_hit_btn.clicked.connect(selector.get_magic_crit)
+    ui_setter.bludgeoning_btn.clicked.connect(selector.get_bludgeoning_crit)
+    ui_setter.slashing_btn.clicked.connect(selector.get_slashing_crit)
+    ui_setter.piercing_btn.clicked.connect(selector.get_piercing_crit)
+    ui_setter.magic_hit_btn.clicked.connect(selector.get_magic_crit)
 
-    ui.melee_btn.clicked.connect(selector.get_melee_fumble)
-    ui.ranged_btn.clicked.connect(selector.get_ranged_fumble)
-    ui.natural_btn.clicked.connect(selector.get_natural_fumble)
-    ui.magic_fumble_btn.clicked.connect(selector.get_magic_fumble)
+    ui_setter.melee_btn.clicked.connect(selector.get_melee_fumble)
+    ui_setter.ranged_btn.clicked.connect(selector.get_ranged_fumble)
+    ui_setter.natural_btn.clicked.connect(selector.get_natural_fumble)
+    ui_setter.magic_fumble_btn.clicked.connect(selector.get_magic_fumble)
 
     mw.show()
 
