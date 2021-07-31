@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>574</width>
-    <height>278</height>
+    <height>518</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,14 +20,35 @@
       <x>10</x>
       <y>10</y>
       <width>551</width>
-      <height>142</height>
+      <height>227</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="2">
-      <widget class="QPushButton" name="slashing_btn">
+     <item row="1" column="3">
+      <widget class="QPushButton" name="magic_hit_btn">
        <property name="text">
-        <string>Cortante</string>
+        <string>Magia</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QPushButton" name="magic_fumble_btn">
+       <property name="text">
+        <string>Magia</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="4">
+      <widget class="QLabel" name="critical_hit_label">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Críticos</string>
        </property>
       </widget>
      </item>
@@ -48,28 +69,7 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="3">
-      <widget class="QPushButton" name="magic_hit_btn">
-       <property name="text">
-        <string>Magia</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0" colspan="4">
-      <widget class="QLabel" name="critical_hit_label">
-       <property name="font">
-        <font>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Críticos</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0" colspan="4">
+     <item row="4" column="0" colspan="4">
       <widget class="QLabel" name="fumble_label">
        <property name="font">
         <font>
@@ -83,31 +83,69 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="0">
-      <widget class="QPushButton" name="melee_btn">
-       <property name="text">
-        <string>Cuerpo a cuerpo</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
+     <item row="5" column="1">
       <widget class="QPushButton" name="ranged_btn">
        <property name="text">
         <string>A distancia</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="2">
+     <item row="1" column="2">
+      <widget class="QPushButton" name="slashing_btn">
+       <property name="text">
+        <string>Cortante</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="melee_btn">
+       <property name="text">
+        <string>Cuerpo a cuerpo</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
       <widget class="QPushButton" name="natural_btn">
        <property name="text">
         <string>Ataque natural</string>
        </property>
       </widget>
      </item>
-     <item row="3" column="3">
-      <widget class="QPushButton" name="magic_fumble_btn">
+     <item row="3" column="0">
+      <widget class="QRadioButton" name="crit_mult_x2">
        <property name="text">
-        <string>Magia</string>
+        <string>x2</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QRadioButton" name="crit_mult_x3">
+       <property name="text">
+        <string>x3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="4">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Multiplicador</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QRadioButton" name="crit_mult_x4">
+       <property name="text">
+        <string>x4</string>
        </property>
       </widget>
      </item>
@@ -120,9 +158,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>160</y>
+      <y>250</y>
       <width>551</width>
-      <height>91</height>
+      <height>241</height>
      </rect>
     </property>
     <property name="font">
