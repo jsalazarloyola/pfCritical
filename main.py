@@ -58,6 +58,7 @@ class Critical:
 
 class CriticalLoader:
     """Loader for JSON files with information for critical roles"""
+
     def __init__(self, filename):
         # Loads the required file
         with open(filename) as f:
@@ -94,31 +95,35 @@ class ButtonSelector:
         # Just sets the interface to update with the effects
         self.__ui = ui
 
-    def add_critical_effect(self, effect: Critical):
+    def get_multiplier(self):
+        if self.__ui.crit_mult_x2.isChecked():
+            return 1
+        elif self.__ui.crit_mult_x3.isChecked():
+            return 2
+        elif self.__ui.crit_mult_x4.isChecked():
+            return 3
+        return -1
+
+    def add_critical_effect(self, effects: list[Critical]):
         """Sets text for critical hit"""
         previous_text = self.__ui.results_box.toHtml()
-        text = f'<p style="color: blue"><strong>{effect.name}</strong></p>'\
-               f'<p>{effect.effect}</p><hr>'
+        text = ''
+        for effect in effects:
+            text += f'<p style="color: blue"><strong>{effect.name}</strong></p>' \
+                    f'<p>{effect.effect}</p><hr>'
+
         self.__ui.results_box.setHtml(text + previous_text)
 
     def add_fumble_effect(self, effect: Critical):
         """Sets text for critical fumble"""
         previous_text = self.__ui.results_box.toHtml()
-        text = f'<p style="color: red"><strong>{effect.name}</strong></p>'\
+        text = f'<p style="color: red"><strong>{effect.name}</strong></p>' \
                f'<p>{effect.effect}</p><hr>'
         self.__ui.results_box.setHtml(text + previous_text)
 
-    def get_bludgeoning_crit(self):
-        self.add_critical_effect(HITS.random_select("bludgeoning"))
-
-    def get_piercing_crit(self):
-        self.add_critical_effect(HITS.random_select("piercing"))
-
-    def get_slashing_crit(self):
-        self.add_critical_effect(HITS.random_select("slashing"))
-
-    def get_magic_crit(self):
-        self.add_critical_effect(HITS.random_select("magic"))
+    def get_critical(self, crit_type: str):
+        effects = [HITS.random_select(crit_type) for _ in range(self.get_multiplier())]
+        self.add_critical_effect(effects)
 
     def get_melee_fumble(self):
         self.add_fumble_effect(FUMBLE.random_select("melee"))
@@ -149,10 +154,10 @@ if __name__ == '__main__':
     selector = ButtonSelector(ui_setter)
 
     # Set signals and targets
-    ui_setter.bludgeoning_btn.clicked.connect(selector.get_bludgeoning_crit)
-    ui_setter.slashing_btn.clicked.connect(selector.get_slashing_crit)
-    ui_setter.piercing_btn.clicked.connect(selector.get_piercing_crit)
-    ui_setter.magic_hit_btn.clicked.connect(selector.get_magic_crit)
+    ui_setter.bludgeoning_btn.clicked.connect(lambda: selector.get_critical("bludgeoning"))
+    ui_setter.slashing_btn.clicked.connect(lambda: selector.get_critical("slashing"))
+    ui_setter.piercing_btn.clicked.connect(lambda: selector.get_critical("piercing"))
+    ui_setter.magic_hit_btn.clicked.connect(lambda: selector.get_critical("magic"))
 
     ui_setter.melee_btn.clicked.connect(selector.get_melee_fumble)
     ui_setter.ranged_btn.clicked.connect(selector.get_ranged_fumble)
