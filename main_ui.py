@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainGuizFzwKP.ui'
+## Form generated from reading UI file 'mainGuiyHyRIC.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -12,31 +12,39 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
+import icons_rc
+
 
 class UiMainWindow(object):
-    def setup_ui(self, main_window):
-        if not main_window.objectName():
-            main_window.setObjectName(u"MainWindow")
-        main_window.resize(574, 518)
-        self.central_widget = QWidget(main_window)
-        self.central_widget.setObjectName(u"centralwidget")
-        self.grid_layout_widget = QWidget(self.central_widget)
-        self.grid_layout_widget.setObjectName(u"gridLayoutWidget")
-        self.grid_layout_widget.setGeometry(QRect(10, 10, 551, 227))
-        self.grid_layout = QGridLayout(self.grid_layout_widget)
-        self.grid_layout.setObjectName(u"gridLayout")
-        self.grid_layout.setContentsMargins(0, 0, 0, 0)
-        self.magic_hit_btn = QPushButton(self.grid_layout_widget)
+    def setup_ui(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(495, 554)
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.gridLayoutWidget = QWidget(self.centralwidget)
+        self.gridLayoutWidget.setObjectName(u"gridLayoutWidget")
+        self.gridLayoutWidget.setGeometry(QRect(10, 10, 471, 199))
+        self.gridLayout = QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.magic_hit_btn = QPushButton(self.gridLayoutWidget)
         self.magic_hit_btn.setObjectName(u"magic_hit_btn")
+        icon = QIcon()
+        icon.addFile(u":/icon/assets/magic.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.magic_hit_btn.setIcon(icon)
 
-        self.grid_layout.addWidget(self.magic_hit_btn, 1, 3, 1, 1)
+        self.gridLayout.addWidget(self.magic_hit_btn, 1, 3, 1, 1)
 
-        self.magic_fumble_btn = QPushButton(self.grid_layout_widget)
+        self.magic_fumble_btn = QPushButton(self.gridLayoutWidget)
         self.magic_fumble_btn.setObjectName(u"magic_fumble_btn")
+        icon1 = QIcon()
+        icon1.addFile(u":/icon/assets/magic_fumble.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.magic_fumble_btn.setIcon(icon1)
 
-        self.grid_layout.addWidget(self.magic_fumble_btn, 5, 3, 1, 1)
+        self.gridLayout.addWidget(self.magic_fumble_btn, 5, 3, 1, 1)
 
-        self.critical_hit_label = QLabel(self.grid_layout_widget)
+        self.critical_hit_label = QLabel(self.gridLayoutWidget)
         self.critical_hit_label.setObjectName(u"critical_hit_label")
         font = QFont()
         font.setPointSize(14)
@@ -44,57 +52,75 @@ class UiMainWindow(object):
         font.setWeight(75)
         self.critical_hit_label.setFont(font)
 
-        self.grid_layout.addWidget(self.critical_hit_label, 0, 0, 1, 4)
+        self.gridLayout.addWidget(self.critical_hit_label, 0, 0, 1, 4)
 
-        self.bludgeoning_btn = QPushButton(self.grid_layout_widget)
+        self.bludgeoning_btn = QPushButton(self.gridLayoutWidget)
         self.bludgeoning_btn.setObjectName(u"bludgeoning_btn")
         self.bludgeoning_btn.setEnabled(True)
+        icon2 = QIcon()
+        icon2.addFile(u":/icon/assets/bludgeoning.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.bludgeoning_btn.setIcon(icon2)
 
-        self.grid_layout.addWidget(self.bludgeoning_btn, 1, 0, 1, 1)
+        self.gridLayout.addWidget(self.bludgeoning_btn, 1, 0, 1, 1)
 
-        self.piercing_btn = QPushButton(self.grid_layout_widget)
+        self.piercing_btn = QPushButton(self.gridLayoutWidget)
         self.piercing_btn.setObjectName(u"piercing_btn")
+        icon3 = QIcon()
+        icon3.addFile(u":/icon/assets/piercing.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.piercing_btn.setIcon(icon3)
 
-        self.grid_layout.addWidget(self.piercing_btn, 1, 1, 1, 1)
+        self.gridLayout.addWidget(self.piercing_btn, 1, 1, 1, 1)
 
-        self.fumble_label = QLabel(self.grid_layout_widget)
+        self.fumble_label = QLabel(self.gridLayoutWidget)
         self.fumble_label.setObjectName(u"fumble_label")
         self.fumble_label.setFont(font)
 
-        self.grid_layout.addWidget(self.fumble_label, 4, 0, 1, 4)
+        self.gridLayout.addWidget(self.fumble_label, 4, 0, 1, 4)
 
-        self.ranged_btn = QPushButton(self.grid_layout_widget)
+        self.ranged_btn = QPushButton(self.gridLayoutWidget)
         self.ranged_btn.setObjectName(u"ranged_btn")
+        icon4 = QIcon()
+        icon4.addFile(u":/icon/assets/ranged.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.ranged_btn.setIcon(icon4)
 
-        self.grid_layout.addWidget(self.ranged_btn, 5, 1, 1, 1)
+        self.gridLayout.addWidget(self.ranged_btn, 5, 1, 1, 1)
 
-        self.slashing_btn = QPushButton(self.grid_layout_widget)
+        self.slashing_btn = QPushButton(self.gridLayoutWidget)
         self.slashing_btn.setObjectName(u"slashing_btn")
+        icon5 = QIcon()
+        icon5.addFile(u":/icon/assets/slashing.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.slashing_btn.setIcon(icon5)
 
-        self.grid_layout.addWidget(self.slashing_btn, 1, 2, 1, 1)
+        self.gridLayout.addWidget(self.slashing_btn, 1, 2, 1, 1)
 
-        self.melee_btn = QPushButton(self.grid_layout_widget)
+        self.melee_btn = QPushButton(self.gridLayoutWidget)
         self.melee_btn.setObjectName(u"melee_btn")
+        icon6 = QIcon()
+        icon6.addFile(u":/icon/assets/melee.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.melee_btn.setIcon(icon6)
 
-        self.grid_layout.addWidget(self.melee_btn, 5, 0, 1, 1)
+        self.gridLayout.addWidget(self.melee_btn, 5, 0, 1, 1)
 
-        self.natural_btn = QPushButton(self.grid_layout_widget)
+        self.natural_btn = QPushButton(self.gridLayoutWidget)
         self.natural_btn.setObjectName(u"natural_btn")
+        icon7 = QIcon()
+        icon7.addFile(u":/icon/assets/natural.svg", QSize(), QIcon.Normal, QIcon.Off)
+        self.natural_btn.setIcon(icon7)
 
-        self.grid_layout.addWidget(self.natural_btn, 5, 2, 1, 1)
+        self.gridLayout.addWidget(self.natural_btn, 5, 2, 1, 1)
 
-        self.crit_mult_x2 = QRadioButton(self.grid_layout_widget)
+        self.crit_mult_x2 = QRadioButton(self.gridLayoutWidget)
         self.crit_mult_x2.setObjectName(u"crit_mult_x2")
         self.crit_mult_x2.setChecked(True)
 
-        self.grid_layout.addWidget(self.crit_mult_x2, 3, 0, 1, 1)
+        self.gridLayout.addWidget(self.crit_mult_x2, 3, 0, 1, 1)
 
-        self.crit_mult_x3 = QRadioButton(self.grid_layout_widget)
+        self.crit_mult_x3 = QRadioButton(self.gridLayoutWidget)
         self.crit_mult_x3.setObjectName(u"crit_mult_x3")
 
-        self.grid_layout.addWidget(self.crit_mult_x3, 3, 1, 1, 1)
+        self.gridLayout.addWidget(self.crit_mult_x3, 3, 1, 1, 1)
 
-        self.label = QLabel(self.grid_layout_widget)
+        self.label = QLabel(self.gridLayoutWidget)
         self.label.setObjectName(u"label")
         font1 = QFont()
         font1.setPointSize(12)
@@ -102,32 +128,32 @@ class UiMainWindow(object):
         font1.setWeight(75)
         self.label.setFont(font1)
 
-        self.grid_layout.addWidget(self.label, 2, 0, 1, 4)
+        self.gridLayout.addWidget(self.label, 2, 0, 1, 4)
 
-        self.crit_mult_x4 = QRadioButton(self.grid_layout_widget)
+        self.crit_mult_x4 = QRadioButton(self.gridLayoutWidget)
         self.crit_mult_x4.setObjectName(u"crit_mult_x4")
 
-        self.grid_layout.addWidget(self.crit_mult_x4, 3, 2, 1, 1)
+        self.gridLayout.addWidget(self.crit_mult_x4, 3, 2, 1, 1)
 
-        self.results_box = QTextBrowser(self.central_widget)
+        self.results_box = QTextBrowser(self.centralwidget)
         self.results_box.setObjectName(u"results_box")
         self.results_box.setEnabled(True)
-        self.results_box.setGeometry(QRect(10, 250, 551, 241))
+        self.results_box.setGeometry(QRect(10, 210, 471, 321))
         font2 = QFont()
         font2.setPointSize(12)
         self.results_box.setFont(font2)
-        main_window.setCentralWidget(self.central_widget)
-        self.status_bar = QStatusBar(main_window)
-        self.status_bar.setObjectName(u"statusbar")
-        main_window.setStatusBar(self.status_bar)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QStatusBar(MainWindow)
+        self.statusbar.setObjectName(u"statusbar")
+        MainWindow.setStatusBar(self.statusbar)
 
-        self.retranslate_ui(main_window)
+        self.retranslateUi(MainWindow)
 
-        QMetaObject.connectSlotsByName(main_window)
-    # setup_ui
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
 
-    def retranslate_ui(self, main_window):
-        main_window.setWindowTitle(QCoreApplication.translate("MainWindow", u"Cr\u00edticos para Pathfinder", None))
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Cr\u00edticos para Pathfinder", None))
         self.magic_hit_btn.setText(QCoreApplication.translate("MainWindow", u"Magia", None))
         self.magic_fumble_btn.setText(QCoreApplication.translate("MainWindow", u"Magia", None))
         self.critical_hit_label.setText(QCoreApplication.translate("MainWindow", u"Cr\u00edticos", None))
@@ -142,5 +168,5 @@ class UiMainWindow(object):
         self.crit_mult_x3.setText(QCoreApplication.translate("MainWindow", u"x3", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Multiplicador", None))
         self.crit_mult_x4.setText(QCoreApplication.translate("MainWindow", u"x4", None))
-    # retranslate_ui
+    # retranslateUi
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>574</width>
-    <height>518</height>
+    <width>495</width>
+    <height>554</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>551</width>
-      <height>227</height>
+      <width>471</width>
+      <height>199</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
@@ -29,12 +29,20 @@
        <property name="text">
         <string>Magia</string>
        </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/icon/assets/magic.svg</normaloff>:/icon/assets/magic.svg</iconset>
+       </property>
       </widget>
      </item>
      <item row="5" column="3">
       <widget class="QPushButton" name="magic_fumble_btn">
        <property name="text">
         <string>Magia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/icon/assets/magic_fumble.svg</normaloff>:/icon/assets/magic_fumble.svg</iconset>
        </property>
       </widget>
      </item>
@@ -60,12 +68,20 @@
        <property name="text">
         <string>Contundente</string>
        </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/icon/assets/bludgeoning.svg</normaloff>:/icon/assets/bludgeoning.svg</iconset>
+       </property>
       </widget>
      </item>
      <item row="1" column="1">
       <widget class="QPushButton" name="piercing_btn">
        <property name="text">
         <string>Penetrante</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/icon/assets/piercing.svg</normaloff>:/icon/assets/piercing.svg</iconset>
        </property>
       </widget>
      </item>
@@ -88,12 +104,20 @@
        <property name="text">
         <string>A distancia</string>
        </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/icon/assets/ranged.svg</normaloff>:/icon/assets/ranged.svg</iconset>
+       </property>
       </widget>
      </item>
      <item row="1" column="2">
       <widget class="QPushButton" name="slashing_btn">
        <property name="text">
         <string>Cortante</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/icon/assets/slashing.svg</normaloff>:/icon/assets/slashing.svg</iconset>
        </property>
       </widget>
      </item>
@@ -102,12 +126,20 @@
        <property name="text">
         <string>Cuerpo a cuerpo</string>
        </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/icon/assets/melee.svg</normaloff>:/icon/assets/melee.svg</iconset>
+       </property>
       </widget>
      </item>
      <item row="5" column="2">
       <widget class="QPushButton" name="natural_btn">
        <property name="text">
         <string>Ataque natural</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/icon/assets/natural.svg</normaloff>:/icon/assets/natural.svg</iconset>
        </property>
       </widget>
      </item>
@@ -158,9 +190,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>250</y>
-      <width>551</width>
-      <height>241</height>
+      <y>210</y>
+      <width>471</width>
+      <height>321</height>
      </rect>
     </property>
     <property name="font">
@@ -172,6 +204,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

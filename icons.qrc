@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>assets/natural.svg</file>
+    <file>assets/magic_fumble.svg</file>
+    <file>assets/bludgeoning.svg</file>
+    <file>assets/piercing.svg</file>
+    <file>assets/magic.svg</file>
+    <file>assets/melee.svg</file>
+    <file>assets/ranged.svg</file>
+    <file>assets/slashing.svg</file>
+  </qresource>
+</RCC>
