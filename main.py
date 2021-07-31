@@ -96,13 +96,17 @@ class ButtonSelector:
 
     def add_critical_effect(self, effect: Critical):
         """Sets text for critical hit"""
-        self.__ui.results_box.setHtml(f'<p style="color: blue"><strong>{effect.name}</strong></p>'
-                                      f'<p>{effect.effect}</p>')
+        previous_text = self.__ui.results_box.toHtml()
+        text = f'<p style="color: blue"><strong>{effect.name}</strong></p>'\
+               f'<p>{effect.effect}</p><hr>'
+        self.__ui.results_box.setHtml(text + previous_text)
 
     def add_fumble_effect(self, effect: Critical):
         """Sets text for critical fumble"""
-        self.__ui.results_box.setHtml(f'<p style="color: red"><strong>{effect.name}</strong></p>'
-                                      f'<p>{effect.effect}</p>')
+        previous_text = self.__ui.results_box.toHtml()
+        text = f'<p style="color: red"><strong>{effect.name}</strong></p>'\
+               f'<p>{effect.effect}</p><hr>'
+        self.__ui.results_box.setHtml(text + previous_text)
 
     def get_bludgeoning_crit(self):
         self.add_critical_effect(HITS.random_select("bludgeoning"))
