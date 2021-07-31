@@ -125,17 +125,8 @@ class ButtonSelector:
         effects = [HITS.random_select(crit_type) for _ in range(self.get_multiplier())]
         self.add_critical_effect(effects)
 
-    def get_melee_fumble(self):
-        self.add_fumble_effect(FUMBLE.random_select("melee"))
-
-    def get_ranged_fumble(self):
-        self.add_fumble_effect(FUMBLE.random_select("melee"))
-
-    def get_natural_fumble(self):
-        self.add_fumble_effect(FUMBLE.random_select("natural"))
-
-    def get_magic_fumble(self):
-        self.add_fumble_effect(FUMBLE.random_select("magic"))
+    def get_fumble(self, fumble_type: str):
+        self.add_fumble_effect(FUMBLE.random_select(fumble_type))
 
 
 if __name__ == '__main__':
@@ -159,10 +150,10 @@ if __name__ == '__main__':
     ui_setter.piercing_btn.clicked.connect(lambda: selector.get_critical("piercing"))
     ui_setter.magic_hit_btn.clicked.connect(lambda: selector.get_critical("magic"))
 
-    ui_setter.melee_btn.clicked.connect(selector.get_melee_fumble)
-    ui_setter.ranged_btn.clicked.connect(selector.get_ranged_fumble)
-    ui_setter.natural_btn.clicked.connect(selector.get_natural_fumble)
-    ui_setter.magic_fumble_btn.clicked.connect(selector.get_magic_fumble)
+    ui_setter.melee_btn.clicked.connect(lambda: selector.get_fumble("melee"))
+    ui_setter.ranged_btn.clicked.connect(lambda: selector.get_fumble("ranged"))
+    ui_setter.natural_btn.clicked.connect(lambda: selector.get_fumble("natural"))
+    ui_setter.magic_fumble_btn.clicked.connect(lambda: selector.get_fumble("magic"))
 
     # Show main window
     mw.show()
