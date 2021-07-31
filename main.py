@@ -96,6 +96,7 @@ class ButtonSelector:
         self.__ui = ui
 
     def get_multiplier(self):
+        # Gets how many effects should be selected
         if self.__ui.crit_mult_x2.isChecked():
             return 1
         elif self.__ui.crit_mult_x3.isChecked():
@@ -122,10 +123,12 @@ class ButtonSelector:
         self.__ui.results_box.setHtml(text + previous_text)
 
     def get_critical(self, crit_type: str):
+        """Gets the critical hit effect and puts it in the text box"""
         effects = [HITS.random_select(crit_type) for _ in range(self.get_multiplier())]
         self.add_critical_effect(effects)
 
     def get_fumble(self, fumble_type: str):
+        """Gets the fumble effect and puts it in the text box"""
         self.add_fumble_effect(FUMBLE.random_select(fumble_type))
 
 
