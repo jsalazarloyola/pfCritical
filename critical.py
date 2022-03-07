@@ -53,13 +53,13 @@ class CriticalLoader:
     def __init__(self, filename):
         # Loads the required file
         with open(filename) as f:
-            criticals = json.load(f)
+            critical_dict = json.load(f)
 
         # Dictionary for critical lists
         # Each key should be a critical type, which are strings
         self.__critical_dict = {}
-        for key in criticals:
-            self.__critical_dict[key] = [Critical(**d) for d in criticals[key]]
+        for key in critical_dict:
+            self.__critical_dict[key] = [Critical(**d) for d in critical_dict[key]]
 
     def random_select(self, crit_type: str) -> Critical:
         """Returns a randomly selected critical according to the type"""
