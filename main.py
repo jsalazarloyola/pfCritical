@@ -35,7 +35,7 @@ class ButtonSelector:
         previous_text = self.__ui.results_box.toHtml()
         text = ''
         for effect in effects:
-            text += f'<p style="color: blue"><strong>{effect.name}</strong></p>' \
+            text += f'<p style="color: dodgerblue"><strong>{effect.name}</strong></p>' \
                     f'<p>{effect.effect}</p><hr>'
 
         self.__ui.results_box.setHtml(text + previous_text)
