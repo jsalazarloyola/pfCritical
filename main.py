@@ -20,6 +20,20 @@ class ButtonSelector:
         # Just sets the interface to update with the effects
         self.__ui = ui
 
+        self.__text = ""
+        self.__stylesheet = "<style>" \
+                            ".critical {color: dodgerblue; font-weight: bold;}" \
+                            ".fumble {color: red; font-weight: bold;}" \
+                            ".new {background-color: cornsilk; color: black;}" \
+                            "</style>"
+
+    def update_text(self, text):
+        self.__text = self.__text.replace('class="new"', 'class="old"')
+        self.__text = text + self.__text
+
+    def update_box(self):
+        self.__ui.results_box.setHtml(self.__stylesheet + self.__text)
+
     def get_multiplier(self):
         # Gets how many effects should be selected
         if self.__ui.crit_mult_x2.isChecked():
@@ -32,20 +46,27 @@ class ButtonSelector:
 
     def add_critical_effect(self, effects: list[Critical]):
         """Sets text for critical hit"""
-        previous_text = self.__ui.results_box.toHtml()
+        # previous_text = self.__ui.results_box.toHtml()
         text = ''
         for effect in effects:
-            text += f'<p style="color: dodgerblue"><strong>{effect.name}</strong></p>' \
-                    f'<p>{effect.effect}</p><hr>'
+            text += f'<div class="new">' \
+                    f'<span class="critical">{effect.name}</span><br>' \
+                    f'<span>{effect.effect}</span><hr></div>'
 
-        self.__ui.results_box.setHtml(text + previous_text)
+        # self.__ui.results_box.setHtml(text + previous_text)
+        self.update_text(text)
+        self.update_box()
 
     def add_fumble_effect(self, effect: Critical):
         """Sets text for critical fumble"""
-        previous_text = self.__ui.results_box.toHtml()
-        text = f'<p style="color: red"><strong>{effect.name}</strong></p>' \
-               f'<p>{effect.effect}</p><hr>'
-        self.__ui.results_box.setHtml(text + previous_text)
+        # previous_text = self.__ui.results_box.toHtml()
+        text = f'<div class="new">' \
+               f'<span class="fumble">{effect.name}</span><br>' \
+               f'<span>{effect.effect}</span>' \
+               f'</div><hr>'
+        # self.__ui.results_box.setHtml(text + previous_text)
+        self.update_text(text)
+        self.update_box()
 
     def get_critical(self, crit_type: str):
         """Gets the critical hit effect and puts it in the text box"""
