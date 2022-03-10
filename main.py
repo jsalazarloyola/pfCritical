@@ -4,7 +4,7 @@
 import sys
 
 from PySide2.QtWidgets import QApplication, QMainWindow
-from PySide2.QtCore import QTranslator
+from PySide2.QtCore import QTranslator, QLocale
 
 from main_ui import UiMainWindow
 from critical import Critical, HITS, FUMBLE
@@ -84,7 +84,8 @@ if __name__ == '__main__':
     app = QApplication([])
     # Localización y weás :v
     translator = QTranslator()
-    translator.load('i18n/en_US')
+    locale = QLocale("es")
+    translator.load(locale, "mainWindow", prefix="_", directory='i18n')
     app.installTranslator(translator)
 
     # Interface

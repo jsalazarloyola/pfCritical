@@ -1,3 +1,3 @@
 SOURCES = main.py critical.py
 FORMS = mainGui.ui
-TRANSLATIONS = i18n/en_US.ts i18n/es_ES.ts
+TRANSLATIONS = i18n/mainWindow_en.ts i18n/mainWindow_es.ts
