@@ -4,6 +4,7 @@
 import sys
 
 from PySide2.QtWidgets import QApplication, QMainWindow
+from PySide2.QtCore import QTranslator
 
 from main_ui import UiMainWindow
 from critical import Critical, HITS, FUMBLE
@@ -81,6 +82,10 @@ class ButtonSelector:
 if __name__ == '__main__':
     # Main application
     app = QApplication([])
+    # Localización y weás :v
+    translator = QTranslator()
+    translator.load('i18n/en_US')
+    app.installTranslator(translator)
 
     # Interface
     ui_setter = UiMainWindow()
