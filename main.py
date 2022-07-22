@@ -1,6 +1,9 @@
 # TODO: document
 # TODO: refine interface
 # TODO: clean the code
+# TODO: should I get a unique function to update the text, with flags to select between fumble
+# and hit?
+# TODO: add selector for language of the interface
 import sys
 
 from PySide2.QtWidgets import QApplication, QMainWindow
@@ -18,10 +21,13 @@ class ButtonSelector:
     """
 
     def __init__(self, ui):
-        # Just sets the interface to update with the effects
+        # The interface from whence the buttons will be retrieved and where the text will be
+        # updated
         self.__ui = ui
 
+        # The text to put in the (HTML) text box of the interface
         self.__text = ""
+        # The style for the elements
         self.__stylesheet = "<style>" \
                             ".critical {color: dodgerblue; font-weight: bold;}" \
                             ".fumble {color: red; font-weight: bold;}" \
@@ -29,43 +35,43 @@ class ButtonSelector:
                             "</style>"
 
     def update_text(self, text):
+        """Updates the text to show in the interface"""
         self.__text = self.__text.replace('class="new"', 'class="old"')
         self.__text = text + self.__text
 
     def update_box(self):
+        """Updates the HTML in results' box in the interface"""
         self.__ui.results_box.setHtml(self.__stylesheet + self.__text)
 
     def get_multiplier(self):
-        # Gets how many effects should be selected
+        """Gets how many effects should be selected"""
         if self.__ui.crit_mult_x2.isChecked():
             return 1
         elif self.__ui.crit_mult_x3.isChecked():
             return 2
         elif self.__ui.crit_mult_x4.isChecked():
             return 3
+        # Just in case
         return -1
 
     def add_critical_effect(self, effects: list[Critical]):
         """Sets text for critical hit"""
-        # previous_text = self.__ui.results_box.toHtml()
         text = ''
         for effect in effects:
             text += f'<div class="new">' \
                     f'<span class="critical">{effect.name}</span><br>' \
-                    f'<span>{effect.effect}</span><hr></div>'
+                    f'<span>{effect.effect}</span>' \
+                    f'<hr></div>'
 
-        # self.__ui.results_box.setHtml(text + previous_text)
         self.update_text(text)
         self.update_box()
 
     def add_fumble_effect(self, effect: Critical):
         """Sets text for critical fumble"""
-        # previous_text = self.__ui.results_box.toHtml()
         text = f'<div class="new">' \
                f'<span class="fumble">{effect.name}</span><br>' \
                f'<span>{effect.effect}</span>' \
                f'</div><hr>'
-        # self.__ui.results_box.setHtml(text + previous_text)
         self.update_text(text)
         self.update_box()
 
