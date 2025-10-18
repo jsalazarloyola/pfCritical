@@ -70,7 +70,17 @@ class CriticalLoader:
         """Parser to the internal dictionary"""
         return self.__critical_dict[item]
 
+    def __iter__(self):
+        return iter(self.__critical_dict)
+
 
 # CONSTANTS
 HITS = CriticalLoader("data/hits.json")
 FUMBLE = CriticalLoader("data/fumble.json")
+
+if __name__ == "__main__":
+    for key in FUMBLE:
+        print(key, len(FUMBLE[key]))
+
+    for key in HITS:
+        print(key, len(HITS[key]))

@@ -211,6 +211,10 @@
 ],
 	"ranged": [
     {
+        "_Critical__name": "Aching Back",
+        "_Critical__effect": "You are fatigued"
+    },
+    {
         "_Critical__name": "Aim Carefully Next Time",
         "_Critical__effect": "For 3 rounds, you must spend a full round action to make a single attack"
     },
@@ -225,10 +229,6 @@
     {
         "_Critical__name": "Archer's Elbow",
         "_Critical__effect": "You take a -2 penalty on all ranged attack rolls for 1d4 minutes"
-    },
-    {
-        "_Critical__name": "Arching Back",
-        "_Critical__effect": "You are fatigued"
     },
     {
         "_Critical__name": "Awkward Attack",
