@@ -59,7 +59,8 @@ class CriticalLoader:
         # Each key should be a critical type, which are strings
         self.__critical_dict = {}
         for key in critical_dict:
-            self.__critical_dict[key] = [Critical(**d) for d in critical_dict[key]]
+            self.__critical_dict[key] = [Critical(**d)
+                                         for d in critical_dict[key]]
 
     def random_select(self, crit_type: str) -> Critical:
         """Returns a randomly selected critical according to the type"""
@@ -71,5 +72,5 @@ class CriticalLoader:
 
 
 # CONSTANTS
-HITS = CriticalLoader("hits.json")
-FUMBLE = CriticalLoader("fumble.json")
+HITS = CriticalLoader("data/hits.json")
+FUMBLE = CriticalLoader("data/fumble.json")
