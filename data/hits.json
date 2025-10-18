@@ -41,12 +41,12 @@
         "_Critical__effect": "Normal damage and 1d4 Con and Dex damage. Target's speeds are reduced by half until healed"
     },
     {
-        "_Critical__name": "Broken Ribs",
-        "_Critical__effect": "Double damage and target cannot heal naturally for 1d4 days"
+        "_Critical__name": "Broken Nose",
+        "_Critical__effect": "Normal damage and 1 Cha damage and 1 bleed"
     },
     {
-        "_Critical__name": "Broken nose",
-        "_Critical__effect": "Normal damage and 1 Cha damage and 1 bleed"
+        "_Critical__name": "Broken Ribs",
+        "_Critical__effect": "Double damage and target cannot heal naturally for 1d4 days"
     },
     {
         "_Critical__name": "Collapsed Lung",
@@ -319,7 +319,7 @@
         "_Critical__effect": "Double damage and +2 on all your attack rolls for 1 round"
     },
     {
-        "_Critical__name": "Muscles Severed",
+        "_Critical__name": "Muscle Severed",
         "_Critical__effect": "Normal damage and 1d6 Dex and 1d6 Str damage"
     },
     {
